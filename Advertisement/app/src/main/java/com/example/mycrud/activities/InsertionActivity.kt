@@ -44,12 +44,15 @@ class InsertionActivity : AppCompatActivity() {
 
         if (empCourseName.isEmpty()) {
             etEmpCourceName.error = "Please enter Course Name"
+            return
         }
         if (empDuration.isEmpty()) {
             etEmpDuration.error = "Please enter Course Duration"
+            return
         }
         if (empDonatePrice.isEmpty()) {
             etEmpDonatePrice.error = "Please enter Donate Price"
+            return
         }
 
         val empId = dbRef.push().key!!
