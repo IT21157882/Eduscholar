@@ -7,37 +7,48 @@
     android:orientation="vertical"
     android:padding="10dp">
 
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="384dp"
+        android:layout_height="166dp"
+        app:srcCompat="@drawable/image2" />
+
     <EditText
         android:id="@+id/etEmpCourseName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="389dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
-        android:hint="Course Name"
+        android:background="@drawable/search_view_bg"
+        android:hint="  Course Name"
+
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/etEmpDuration"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="388dp"
+        android:layout_height="45dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/search_view_bg"
         android:ems="10"
-        android:hint="Course Duration" />
+        android:hint="  Course Duration" />
 
     <EditText
         android:id="@+id/etEmpDonatePrice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="385dp"
+        android:layout_height="47dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/search_view_bg"
         android:ems="10"
-        android:hint="Donate Price"
+        android:hint="  Donate Price"
         android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btnUpdateData"
-        android:layout_width="wrap_content"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:background="@drawable/search_view_bg"
         android:text="Update Add" />
 
 

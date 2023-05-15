@@ -15,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase
 class DetailsActivity : AppCompatActivity() {
 
 
-    private lateinit var tvEmpId: TextView
+
     private lateinit var tvEmpCourseName: TextView
     private lateinit var tvEmpDuration: TextView
     private lateinit var tvEmpDonatePrice: TextView
@@ -46,7 +46,7 @@ class DetailsActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        tvEmpId = findViewById(R.id.tvEmpId)
+//        tvEmpId = findViewById(R.id.tvEmpId)
         tvEmpCourseName = findViewById(R.id.tvEmpCourseName)
         tvEmpDuration = findViewById(R.id.tvEmpDuration)
         tvEmpDonatePrice = findViewById(R.id.tvEmpDonatePrice)
@@ -56,7 +56,7 @@ class DetailsActivity : AppCompatActivity() {
     }
 
     private fun setValuesToViews() {
-        tvEmpId.text = intent.getStringExtra("empId")
+//        tvEmpId.text = intent.getStringExtra("empId")
         tvEmpCourseName.text = intent.getStringExtra("empCourseName")
         tvEmpDuration.text = intent.getStringExtra("empDuration")
         tvEmpDonatePrice.text = intent.getStringExtra("empDonatePrice")

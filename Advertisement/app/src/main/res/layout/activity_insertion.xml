@@ -18,11 +18,12 @@
 
     <EditText
         android:id="@+id/etEmpCourseName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="372dp"
+        android:layout_height="48dp"
         android:layout_marginTop="216dp"
+        android:background="@drawable/search_view_bg"
         android:ems="10"
-        android:hint="Enter Course Name"
+        android:hint="  Enter Course Name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,9 +31,10 @@
 
     <Button
         android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="168dp"
+        android:layout_height="57dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/search_view_bg"
         android:text="Add Course"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,28 +42,31 @@
 
     <EditText
         android:id="@+id/etEmpDonatePrice"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="376dp"
+        android:layout_height="47dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/search_view_bg"
         android:ems="10"
-        android:hint="Enter Donate Price"
+        android:hint="  Enter Donate Price"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmpDuration" />
 
+
     <EditText
         android:id="@+id/etEmpDuration"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="374dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/search_view_bg"
         android:ems="10"
-        android:hint="Enter Course Duration"
+        android:hint="  Enter Course Duration"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmpCourseName" />
-
 
     <ImageView
         android:id="@+id/imageView10"
@@ -75,14 +80,15 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_width="201dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="92dp"
         android:text="Add a new course here..."
+        android:textColor="#3A3434"
         android:textSize="30sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintHorizontal_bias="0.038"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

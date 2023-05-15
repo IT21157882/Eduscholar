@@ -1,5 +1,6 @@
 package com.example.mycrud.adapters
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mycrud.R
 import com.example.mycrud.models.EmployeeModel
 
-class EmpAdapter(private val empList: ArrayList<EmployeeModel>) :
+class EmpAdapter( private var empList: ArrayList<EmployeeModel>) :
     RecyclerView.Adapter<EmpAdapter.ViewHolder>() {
 
     private lateinit var mListener: onItemClickListener
@@ -29,6 +30,8 @@ class EmpAdapter(private val empList: ArrayList<EmployeeModel>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentEmp = empList[position]
         holder.tvEmpCourseName.text = currentEmp.empCourseName
+        holder.tvEmpDuration.text = currentEmp.empDuration
+        holder.tvEmpDonatePrice.text = currentEmp.empDonatePrice
     }
 
     override fun getItemCount(): Int {
@@ -38,6 +41,8 @@ class EmpAdapter(private val empList: ArrayList<EmployeeModel>) :
     class ViewHolder(itemView: View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView) {
 
         val tvEmpCourseName : TextView = itemView.findViewById(R.id.tvEmpCourseName)
+        val tvEmpDuration : TextView = itemView.findViewById(R.id.tvEmpDuration)
+        val tvEmpDonatePrice : TextView = itemView.findViewById(R.id.tvEmpDonatePrice)
 
         init {
             itemView.setOnClickListener {

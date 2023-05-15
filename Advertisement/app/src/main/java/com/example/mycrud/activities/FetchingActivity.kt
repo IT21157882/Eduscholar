@@ -4,13 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.SearchView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mycrud.models.EmployeeModel
 import com.example.mycrud.R
 import com.example.mycrud.adapters.EmpAdapter
+import com.example.mycrud.databinding.ActivityFetchingBinding
 import com.google.firebase.database.*
+import java.util.*
+import kotlin.collections.ArrayList
 
 class FetchingActivity : AppCompatActivity() {
 
@@ -18,10 +22,13 @@ class FetchingActivity : AppCompatActivity() {
     private lateinit var tvLoadingData: TextView
     private lateinit var empList: ArrayList<EmployeeModel>
     private lateinit var dbRef: DatabaseReference
-
+    private lateinit var adapter: EmpAdapter
+    private lateinit var binding: ActivityFetchingBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fetching)
+
+
 
         empRecyclerView = findViewById(R.id.rvEmp)
         empRecyclerView.layoutManager = LinearLayoutManager(this)
@@ -31,6 +38,9 @@ class FetchingActivity : AppCompatActivity() {
         empList = arrayListOf<EmployeeModel>()
 
         getEmployeesData()
+
+
+
 
     }
 
@@ -76,6 +86,12 @@ class FetchingActivity : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
 
+
+
+
         })
     }
+
+
+
 }

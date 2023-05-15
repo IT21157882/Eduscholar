@@ -10,9 +10,11 @@
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:rotation="-180"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/top_background" />
 
@@ -25,20 +27,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/top_background" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvEmp"
-        android:layout_width="361dp"
-        android:layout_height="539dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/search_view_bg"
+        app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toTopOf="@+id/rvEmp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817"
+        app:layout_constraintVertical_bias="1.0"
+        app:queryHint="Search Hear..." />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEmp"
+        android:layout_width="363dp"
+        android:layout_height="569dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:listitem="@layout/emp_list_item" />
 
     <TextView
@@ -57,17 +70,17 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="362dp"
-        android:layout_height="59dp"
-        android:text="Course Advertisements"
+        android:layout_width="313dp"
+        android:layout_height="93dp"
+        android:text="Advertisement And Donate prices"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/rvEmp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.158" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
